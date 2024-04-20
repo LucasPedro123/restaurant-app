@@ -1,0 +1,131 @@
+.img-cover{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.section-subtitle{
+    position: relative;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-2);
+    color: var(--gold-crayola);
+}
+
+.section-subtitle::after{
+    content: url('../../assets/images/separator.svg');
+    display: block;
+    width: 100px;
+    margin-inline: auto;
+    margin-block-start: 5px;
+}
+
+.view-link{
+    position: relative;
+    color: var(--gold-crayola);
+    font-size: var(--fontSize-label-2);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-5);
+    max-width: max-content;
+    border: 2px solid var(--gold-crayola);
+    padding: 12px 45px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.view-link::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 200%;
+    border: var(--radius-circle);
+    background-color: var(--gold-crayola);
+    transition: var(--transition-2);
+    z-index: -1;
+}
+
+.view-link .text{
+    transition: var(--transition-1);
+}
+
+.view-link .text-2{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: max-content;
+    color: var(--smoky-black-1);
+}
+
+.view-link:is(:hover, :focus-visible)::before{
+    bottom: -50%;
+}
+
+
+.view-link:is(:hover, :focus-visible) .text-1{
+    transform: translateY(-40px);
+}
+
+.view-link:is(:hover, :focus-visible) .text-2{
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+.hero{
+    position: relative;
+    min-height: 120px;
+    z-index: 1;
+}
+
+.hero .slider-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    padding-block-start: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-3);
+    z-index: 1;
+}
+
+.hero .slider-item.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero .slider-item.active .slider-bg{
+    position: absolute;
+}
+.hero .slider-bg{
+    animation: sliderAnimation 0.7s linear forwards;
+}
+@keyframes sliderAnimate{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.15);
+    }
+}
+
+.wrapper-text{
+    position: relative;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
