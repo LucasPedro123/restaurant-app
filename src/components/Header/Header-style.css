@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .separator{
@@ -142,34 +142,40 @@
     width: 100%;
     padding-inline: 30px;
     padding-block-end: 50px;
-    overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    overflow-y: auto;
     z-index: 2;
-    transition: transform var(--transition-2); /* Apenas a propriedade transform será animada */
-    transform: translateX(-100%); /* Inicialmente, move o elemento para fora da tela */
+    transition: transform var(--transition-2);
+    /* Apenas a propriedade transform será animada */
+    transform: translateX(-100%);
+    /* Inicialmente, move o elemento para fora da tela */
 }
 
 .navbar.active {
     visibility: visible;
-    transform: translateX(0); /* Centraliza o elemento na tela */
+    transform: translateX(0);
+    /* Centraliza o elemento na tela */
 }
 
 
-.close-btn{
+.close-btn {
     color: var(--white);
-    border: 1px solid currentColor;
+    border: 1px solid var(--white);
     width: 30px;
-    height: 30px;
+    height: 30px;	    
     border-radius: var(--radius-circle);
-    margin-inline-start: auto ;
+    margin-inline-start: auto;
     margin-block: 30px 20px;
-
+    cursor: pointer;
     font-size: 0.6em;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: var(--transition-2);
 }
 
-.close-btn>:is(:hover, :focus-visible){
+
+.close-btn>:is(:hover, :focus-visible).close-btn:is(:hover, :focus-visible) {
+    border: 1px solid var(--gold-crayola);
     color: var(--gold-crayola);
 }
 
@@ -181,7 +187,7 @@
 
 .navbar-list{
     border-block-end: 1px solid var(--white-alpha-20);
-    margin-block-end:100px ;
+    margin-block-end:100px;
 }
 .navbar-item{
     border-block-start: 1px solid var(--white-alpha-20);
@@ -213,7 +219,7 @@
     transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus-visible, .active)  .separator{
+.navbar-link:is(:hover, :focus-visible, .active) .separator{
     opacity: 1;
     transition: var(--transition-2);
 
@@ -277,7 +283,8 @@
 
 @keyframes menuBtn {
     0% {
-        transform: scaleX(1); /* Corrigimos a transformação inicial */
+        transform: scaleX(1);
+        /* Corrigimos a transformação inicial */
     }
     100% {
         transform: scaleX(0.5);
