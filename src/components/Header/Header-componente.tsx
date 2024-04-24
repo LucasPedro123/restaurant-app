@@ -3,8 +3,8 @@ import logo from '../../assets/images/logo.svg'
 import './Header-style.css'
 
 function Header() {
-    let [active, setActive] = useState(false);
-    let [activeBgHeader, setActiveBgHeader] = useState(false);
+    const [active, setActive] = useState(false);
+    const [activeBgHeader, setActiveBgHeader] = useState(false);
 
 
     function toggleNavbar() {
