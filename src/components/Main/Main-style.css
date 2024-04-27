@@ -1,6 +1,10 @@
-.img-cover{
-    width: 100%;
+main{
     height: 100vh;
+}
+
+.img-cover{
+    width: 99.5vw;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -109,7 +113,9 @@
     overflow: hidden;
 }
 .hero .slider-bg img {
-    animation: sliderAnimate 7s linear forwards; /* Certifique-se de usar o mesmo nome */
+    animation: sliderAnimate 7s linear forwards;
+    height: 100vh;
+    /* Certifique-se de usar o mesmo nome */
 }
 
 .wrapper-text{
@@ -121,7 +127,10 @@
     gap: 20px;
 }
 .hero-title{
-    letter-spacing: var(--letterSpacing-1);
+    color: var(--white);
+    font-family: var(--fontFamily-forum);
+    font-weight: var(--weight-regular);
+    line-height: var(--lineHeight-2);
     font-size: var(--fontSize-headline-2);
     margin-block-start: 30px;
 }
