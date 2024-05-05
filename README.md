@@ -50,13 +50,13 @@ O projeto do restaurante é um site moderno e responsivo que inclui uma seção 
 1. **Clone o Repositório**:
 
     ```bash
-    git clone https://github.com/seu-repositorio
+    git clone https://github.com/LucasPedro123/restaurant-app?tab=readme-ov-file
     ```
 
 2. **Navegue até o Diretório do Projeto**:
 
     ```bash
-    cd nome-do-projeto
+    cd restaurant-app
     ```
 
 3. **Instale as Dependências**:
