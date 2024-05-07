@@ -1,0 +1,144 @@
+.w-100 {
+    width: 100%;
+}
+
+.about-banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.btn-primary {
+    position: relative;
+    color: var(--gold-crayola);
+    font-size: var(--fontSize-label-2);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-5);
+    max-width: max-content;
+    border: 2px solid var(--gold-crayola);
+    padding: 12px 45px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 200%;
+    border-radius: var(--radius-circle);
+    background-color: var(--gold-crayola);
+    transition: var(--transition-2);
+}
+
+.btn-primary .text {
+    transition: var(--transition-2);
+}
+
+
+.btn-primary .text-2 {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: max-content;
+    color: var(--smoky-black-1);
+}
+
+
+.btn-primary:is(:hover, :focus-visible)::before {
+    bottom: -50%;
+}
+
+
+.btn-primary:is(:hover, :focus-visible) .text-2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.wrapper-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: grid;
+    gap: 20px;
+}
+
+.about .container {
+    display: grid;
+    gap: 120px;
+}
+
+.about-banner {
+    position: relative;
+
+    margin-block-end: 120px;
+}
+
+.abs-img-1 img {
+    width: 570px;
+}
+
+.about-banner img {
+    width: 100%;
+}
+
+.wrapper-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img{
+       max-width: 200px;
+    }
+}
+.about .abs-img::before{
+    z-index: -1;
+}
+.about .abs-img {
+    position: absolute;
+}
+.about .abs-img-1{
+    bottom: -120px;
+    left: -30px;
+}
+
+.abs-img-2{
+    top: -65px;
+    right: 0;
+
+    z-index: 99;
+}
+
+.abs-img-1::before{
+    inset: 0;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 140px;
+    background-image: url('../../assets/images/img-pattern.svg');
+    background-repeat: repeat;
+}
+
+
+.abs-img-2::before{
+    inset: 0;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/badge-2-bg.png');
+    background-size: contain;
+    animation: rotate360 15s linear infinite;
+}
+
