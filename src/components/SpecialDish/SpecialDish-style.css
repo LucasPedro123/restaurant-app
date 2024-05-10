@@ -1,0 +1,25 @@
+.special-dish-content{
+    padding-block: 40px;
+}
+
+.special-dish-content .abs-img{
+    margin-inline: auto;
+    width: 28px;
+    height: 41px;
+}
+
+.special-dish-content .wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-block: 40px;
+    del{
+        color: var( --davys-grey);
+    }
+    span{
+        font-size: var( --fontSize-body-1);
+        color: var( --gold-crayola);
+    }
+ 
+}
