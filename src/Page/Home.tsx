@@ -2,6 +2,7 @@ import About from "../components/About/About-component";
 import Header from "../components/Header/Header-componente";
 import Main from "../components/Main/Main-component";
 import Service from "../components/Service/Service-component";
+import SpecialDish from "../components/SpecialDish/SpecialDish-component";
 
 function Home() {
 
@@ -10,7 +11,8 @@ function Home() {
       <Header />
       <Main/>
       <Service />
-      <About/>
+      <About />
+      <SpecialDish/>
     </div>
   )
 }
