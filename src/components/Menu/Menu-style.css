@@ -1,0 +1,84 @@
+
+
+.card-banner .menu-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.menu .container .section-title{
+    margin-block-end: 40px;
+}
+
+.menu .grid-list{
+    margin-block-end: t0px;
+}
+
+.menu-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.menu-img{
+    transition: var(--transition-2);
+}
+
+.menu-card .card-banner{
+    width: 125%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-24);
+}
+
+
+.menu-card:is(:hover, :focus-within) .card-banner .menu-img{
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.menu-card .card-title{
+    transition: var(--transition-1);
+}
+
+.menu-card .badge{
+    background-color: var(--gold-crayola);
+    color: var(--eerie-black-1);
+    font-family: var(--fontFamily-forum);
+    max-width: max-content;
+    line-height: var(--lineHeight-6);
+    text-transform: uppercase;
+    padding-inline: 16px;
+    margin-block-start: 10px;
+}
+
+.menu-card .card-title:is(:hover, :focus-visible){
+    color: var(--gold-crayola);
+}
+
+.menu-card span{
+    color: var(--gold-crayola);
+    margin-block: 10px;
+}
+
+.menu-card .card-text{
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-4);
+}
+
+
+.menu-text{
+    margin-top: 20px;
+}
+
+.menu-text span{
+    display: inline-block;
+    color: var(--gold-crayola);
+}
+
+
+.menu .shape-content img {
+    display: none;
+}
+
+
