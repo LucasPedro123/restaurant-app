@@ -4,6 +4,7 @@ import Main from "../components/Main/Main-component";
 import Menu from "../components/Menu/Menu-component";
 import Service from "../components/Service/Service-component";
 import SpecialDish from "../components/SpecialDish/SpecialDish-component";
+import Testi from "../components/Testi/Testi-component";
 
 function Home() {
 
@@ -15,6 +16,7 @@ function Home() {
       <About />
       <SpecialDish />
       <Menu/>
+      <Testi/>
     </div>
   )
 }
