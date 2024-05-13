@@ -1,0 +1,48 @@
+.testi{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/testimonial-bg.jpg');
+}
+
+.testi{
+    padding-block-end: 340px;
+}
+
+.testi .wrapper{
+    display: flex;
+    margin-block-start: 50px;
+    margin-block-end: 40px;
+
+    div{
+        animation: rotate360 4s linear infinite;
+    }
+}
+
+.container .quote{
+    font-size: 7rem;
+    line-height: 0.7em;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile .profile-image{
+    margin-inline: auto;
+    border-radius: var(--radius-circle);
+}
+
+.profile-content .wrapper .separator{
+    width: 15px;
+    height: 15px;
+}
+
+.profile .profile-name{
+    color: var(--gold-crayola);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-3);
+    margin-block: 20px;
+}
