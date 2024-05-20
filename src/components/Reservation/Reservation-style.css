@@ -1,0 +1,96 @@
+.input-field{
+    background-color: var(--eerie-black-2);
+    color: var(--white);
+    height: 56px;
+    padding: 10px 20px;
+    border: 1px solid var(--white-alpha-10);
+    margin-block-end: 20px;
+    outline: none;
+    transition: border-color var(--transition-2);
+}
+
+
+
+.input-field::placeholder{
+    color: inherit;
+}
+
+.input-field:focus{
+    border-color: var(--gold-crayola);
+}
+
+.icon-wrapper{
+    position: relative;
+    margin-block-end: 20px;
+}
+
+.icon-wrapper .input-field{
+    margin-block-end: 0;
+    padding-inline-start: 40px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.icon-wrapper i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.icon-wrapper i:first-child{
+    left: 15px;
+}
+
+.icon-wrapper i:last-child{
+    right: 10px;
+}
+
+
+.reservation-form{
+    margin-block-start: -270px;
+}
+.container{
+    padding-inline: auto;
+}
+
+.form-left{
+    padding: 20px;
+}
+.form-text{
+    margin-block-end: 40px;
+}
+.form-left .headline-1{
+    padding-block-end: 10px;
+}
+.form-text .link{
+    display: inline;
+    color: var(--gold-crayola);
+}
+
+.form-right .headline-1{
+    margin-block-end: 40px;
+}
+
+.form-right .contact-label{
+    margin-block-end: 5px;
+}
+
+.form-right .separator{
+    margin: 20px auto;
+}
+
+.form-right .body-4{
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-3);
+}
+
+
+.form-right .body-4:not(:last-child){
+    margin-block-end: 25px;
+}
+
+.reservation{
+    background-color: var(--smoky-black-1);
+}
