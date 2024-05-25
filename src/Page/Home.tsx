@@ -1,4 +1,5 @@
 import About from "../components/About/About-component";
+import Feature from "../components/Feature/Feature-component";
 import Header from "../components/Header/Header-componente";
 import Main from "../components/Main/Main-component";
 import Menu from "../components/Menu/Menu-component";
@@ -19,6 +20,7 @@ function Home() {
       <Menu/>
       <Testi/>
       <Reservation/>
+      <Feature/>
     </div>
   )
 }
